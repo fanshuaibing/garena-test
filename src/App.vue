@@ -3,20 +3,21 @@
 	  <div class="topbar">
 			<div class="tabs-container">
 				<div class="tabs-left"></div>
-				<div>
+				<div >
 					<v-tabs
 						v-model="tab"
 						background-color="transparent"
 						class="elevation-2 tabs-wrapper"
 						color="#e49f2d"
 						:centered="centered"
+						dark
 						:grow="grow"
 						:vertical="vertical"
 						:right="right"
 						:prev-icon="prevIcon ? 'mdi-arrow-left-bold-box-outline' : undefined"
 						:next-icon="nextIcon ? 'mdi-arrow-right-bold-box-outline' : undefined"
 						:icons-and-text="icons"
-						style="box-shadow: none !important;"
+						style="box-shadow: none !important;width: 100% !important;"
 					>
 						<v-tabs-slider></v-tabs-slider>
 
@@ -31,12 +32,13 @@
 				</div>
 				<div class="tabs-right"></div>
 			</div>
-
-
+		  <div class="logo-wrapper">
+		  </div>
 	  </div>
 
-
-    <v-main>
+    <v-main class="main">
+	    <div style="border: 1px solid #353a40;padding: 40px;">
+	    </div>
       <HelloWorld/>
     </v-main>
   </v-app>
@@ -66,22 +68,29 @@ export default {
 };
 </script>
 <style lang="less">
-
 	.topbar{
 		height: 200px;
 		background-image: url("assets/bg.png");
 		background-size: cover;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		border: 1px solid #999;
+	}
+	.logo-wrapper{
+		background-image: url("./assets/logo.png");
+		background-size: cover;
+		width: 200px;
+		height: 40px;
+		margin-top: 20px;
+		margin-right: 25%;
 	}
 	.tabs-container{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 40px;
-
+		height: 48px;
+		width: 100%;
 	}
 	.tabs-left{
 		height: 100%;
@@ -96,5 +105,8 @@ export default {
 	.v-tabs-slider-wrapper{
 		display: none ;
 		opacity: 0.6;
+	}
+	.main{
+		background: #1e2329;
 	}
 </style>
