@@ -3,7 +3,7 @@
 	  <div class="topbar">
 			<div class="tabs-container">
 				<div class="tabs-left"></div>
-				<div >
+				<div  style="width: 80%">
 					<v-tabs
 						v-model="tab"
 						background-color="transparent"
@@ -37,7 +37,8 @@
 	  </div>
 
     <v-main class="main">
-	    <div style="border: 1px solid #353a40;padding: 40px;">
+	    <div style="width: 100vw;height: 2px;background: #363b41; margin-top: 40px;position: relative">
+		    <div style="position: absolute;top: 50%;left: 50%;color: #9e9e9e;transform: translate(-50%, -50%)">CHARACTER</div>
 	    </div>
       <HelloWorld/>
     </v-main>
@@ -83,7 +84,7 @@ export default {
 		width: 200px;
 		height: 40px;
 		margin-top: 20px;
-		margin-right: 25%;
+		margin-right: 50%;
 	}
 	.tabs-container{
 		display: flex;
@@ -91,6 +92,7 @@ export default {
 		align-items: center;
 		height: 48px;
 		width: 100%;
+
 	}
 	.tabs-left{
 		height: 100%;
