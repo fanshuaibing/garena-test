@@ -1,24 +1,14 @@
 # garena_test
 
-## Project setup
-```
-yarn install
-```
+## 第一题
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+使用 @vue/cli 创建项目
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## 第二题
+当前 github 项目
 
-### Lints and fixes files
-```
-yarn lint
-```
+## 第三题
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[http](src/utils/http.js)
+
+## 第三题
